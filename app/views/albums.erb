@@ -1,13 +1,11 @@
 <div class="container">
   <h1>Checkout your albums</h1>
+
+  <% @albums.each do |album| %>
+  <a href="/albums/<%= album.id %>"> <%= album.title %>  </a>
+  <% end %>
+
  
- Add photo 
- <section id="add">
-<form action="/photos" method="post" enctype="multipart/form-data">
-    <textarea name="content" placeholder="Your note&hellip;"></textarea>
-    <p><input type="file" name="image" /></p>
-    <input type="submit" value="Take Note!">
-</form>
-</section>
+
 
 </div>
