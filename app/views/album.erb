@@ -1,0 +1,12 @@
+url: /albums/1
+
+album = Album.find(:params[:album_id])
+
+
+
+for photo in album.photos:
+
+    <img src="/photos/<%=photo.id %>">
+
+endfor
+

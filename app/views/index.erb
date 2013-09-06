@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Welcome to InstaFlickerGramChat!</h1>
+  
+<table>
+Login:
+<br>
+<%= @login_error %>
+ <form action="/login" method="post">
+  <tr><td><input type="text" name="email" placeholder="Email"></tr><td>
+  <tr><td><input type="password" name="password" placeholder="Password"></tr><td>
+  <tr><td><input type="submit"></tr><td>
+ </form>
+</table>
+<br>
+
+<table>
+Signup:
+<br>
+<%= @creation_error %>
+ <form action="/users" method="post">
+  <tr><td><input type="text" name="email" placeholder="Email"></tr><td>
+  <tr><td><input type="password" name="password" placeholder="Password"></tr><td>
+  <tr><td><input type="submit"></tr><td>
+ </form>
+</table>
+
+</div>
